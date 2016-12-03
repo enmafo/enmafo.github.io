@@ -1,0 +1,42 @@
+@page {
+	margin: 0;
+	size: 8.5in 11in;
+}
+
+@media print {
+
+	.container {
+		width: 100%;
+	}
+
+	.panel-primary > .panel-heading {
+		background-color: #158cba !important;
+	}
+
+	.progress-bar {
+		background-color: #158cba !important;
+		color: #fff !important;
+	}
+
+	.well {
+		background-color: #fafafa !important;
+	}
+
+	#hoja {
+		font-size: 14px;
+	}
+
+		#hoja .fa-ul li {
+			line-height: 14px;
+			margin-top: 5px;
+		}
+
+		#hoja .panel {
+			font-size: 12px !important;
+		}
+
+	#navegacion {
+		display: none !important;
+	}
+
+}
