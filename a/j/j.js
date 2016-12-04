@@ -22,7 +22,7 @@ function cambiar_idioma(idioma) {
 
 // eventos
 $(document).ready(function() {
-	navegacion.load(raiz + 't/nav', function() {
+	navegacion.load(raiz + 't/nav.html', function() {
 		fadeLoad();
 	});
 
