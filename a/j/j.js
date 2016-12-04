@@ -22,7 +22,7 @@ function cambiar_idioma(idioma) {
 
 // eventos
 $(document).ready(function() {
-	navegacion.load(raiz + '_t/nav', function() {
+	navegacion.load(raiz + 't/nav', function() {
 		fadeLoad();
 	});
 
@@ -43,7 +43,7 @@ $(document).on('click', '#navegacion a', function() {
 
 		case "curriculum":
 			cargando.fadeIn(200, function() {
-				contenido.load(raiz + 'curriculum/index.html #contenido > *', function() {
+				contenido.load(raiz + 'cv/index.html #contenido > *', function() {
 					fadeLoad();
 				});
 			});
