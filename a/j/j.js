@@ -1,14 +1,13 @@
 // variables
-var raiz	   = ""; // "" -> local; "/" -> remoto
 var cargando   = $('#cargando');
 var navegacion = $('#navegacion');
 var contenido  = $('#contenido');
 
-$.ajaxSetup ({
-    cache: false
+// funciones
+$.ajaxSetup({
+	cache: false
 });
 
-// funciones
 function fadeLoad() {
 	setTimeout(function() { cargando.fadeOut(200); }, 100);
 }
@@ -22,11 +21,9 @@ function cambiar_idioma(idioma) {
 
 // eventos
 $(document).ready(function() {
-	navegacion.load(raiz + 't/nav.html', function() {
+	navegacion.load('/t/nav.html', function() {
 		fadeLoad();
 	});
-
-	cambiar_idioma("es");
 });
 
 $(document).on('click', '#navegacion a', function() {
@@ -35,7 +32,7 @@ $(document).on('click', '#navegacion a', function() {
 	switch (link) {
 		case "main":
 			cargando.fadeIn(200, function() {
-				contenido.load(raiz + 'index.html #contenido > *', function() {
+				contenido.load('/index.html #contenido > *', function() {
 					fadeLoad();
 				});
 			});
@@ -43,7 +40,8 @@ $(document).on('click', '#navegacion a', function() {
 
 		case "curriculum":
 			cargando.fadeIn(200, function() {
-				contenido.load(raiz + 'cv/index.html #contenido > *', function() {
+				contenido.load('/cv/index.html #contenido > *', function() {
+					cambiar_idioma("es");
 					fadeLoad();
 				});
 			});
