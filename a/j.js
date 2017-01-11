@@ -1,38 +1,35 @@
-// variables
 var cog = document.getElementById('cog');
 var der = document.getElementById('der');
 var sho = document.getElementsByClassName('sho');
 
-// funciones
-function ocultar() {
+function hide() {
 	for (var i = 0; i < sho.length; i++) {
 		sho[i].style.visibility = "hidden";
 	}
 }
 
-function mover(div) {
+function move(div) {
 	if (der.style.left != "0%") {
-		ocultar();
+		hide();
 		div.style.visibility = "visible";
 		der.style.left = "0%";
 	} else {
 		if (div) {
 			der.style.left = "50%";
 			setTimeout(function() {
-				ocultar();
+				hide();
 				div.style.visibility = "visible";
 				der.style.left = "0%";
 			}, 500);
 		} else {
 			der.style.left = "50%";
 			setTimeout(function() {
-				ocultar();
+				hide();
 			}, 500);
 		}
 	}
 }
 
-// eventos
 window.onload = function() {
 	setTimeout(function() {
 		cog.addEventListener('transitionend', function() {
@@ -46,16 +43,20 @@ document.body.addEventListener('click', function(e) {
 	var lnk = e.target.getAttribute("data-link");
 
 	switch (lnk) {
-		case "utilidades":
-			mover(sho[0]);
+		case "utilities":
+			move(sho[0]);
 			break;
 
-		case "proyectos":
-			mover(sho[1]);
+		case "projects":
+			move(sho[1]);
 			break;
 
-		case "contacto":
-			mover(sho[2]);
+		case "contact":
+			move(sho[2]);
+			break;
+
+		case "object2table":
+			window.open('https://github.com/enmafo/object2table', '_blank');
 			break;
 
 		case "github":
@@ -70,8 +71,8 @@ document.body.addEventListener('click', function(e) {
 			window.open('https://twitter.com/enmafo', '_blank');
 			break;
 
-		case "cerrar":
-			mover();
+		case "close":
+			move();
 			break;
 	};
 });

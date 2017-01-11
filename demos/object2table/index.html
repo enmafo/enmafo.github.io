@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>object2table</title>
+	<link href="/demos/object2table/style.css" rel="stylesheet">
+</head>
+<body>
+	<div>
+		<input id="dropzone" type="file" accept=".json">
+		<label for="dropzone"><div>Drop JSON file anywhere<br><span>Press CTRL+S to save the generated file</span></div></label>
+	</div>
+
+	<script src="https://cdn.rawgit.com/enmafo/object2table/f4a6e242dc2b81a2c9356b86b1e46d2c20d8ff92/object2table.js"></script>
+	<script>
+		var dropzone = document.getElementById('dropzone');
+		var reader	 = new FileReader();
+
+		dropzone.onchange = function() {
+			reader.onload = function() {
+				var json_object = JSON.parse(reader.result)
+				object2table(json_object, { editable: true });
+				dropzone.parentNode.parentNode.removeChild(dropzone.parentNode);
+			};
+			reader.readAsText(dropzone.files[0]);
+		};
+
+		document.onkeydown = function(e) {
+			var table = document.getElementById('table');
+			if (e.ctrlKey && table) {
+				if (e.which == 83) {
+					e.preventDefault();
+					
+					var file = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(table2object("table")));
+					var body = document.getElementsByTagName('body')[0];
+					var link = document.createElement('a');
+
+					link.setAttribute("download", "table.json");
+					link.setAttribute("id", "tmp");
+					link.setAttribute("href", file);
+					body.appendChild(link);
+
+					var a = document.getElementById(link.id);
+					a.click();
+					body.removeChild(link);
+				}
+			}
+		};
+	</script>
+</body>
+</html>
