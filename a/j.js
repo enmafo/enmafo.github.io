@@ -1,6 +1,6 @@
-var cog = document.getElementById('cog');
-var der = document.getElementById('der');
-var sho = document.getElementsByClassName('sho');
+var cog = document.getElementById("cog");
+var der = document.getElementById("der");
+var sho = document.getElementsByClassName("sho");
 
 function hide() {
 	for (var i = 0; i < sho.length; i++) {
@@ -32,46 +32,62 @@ function move(div) {
 
 window.onload = function() {
 	setTimeout(function() {
-		cog.addEventListener('transitionend', function() {
+		cog.addEventListener("transitionend", function() {
 			cog.parentNode.removeChild(cog);
 		}, false);
 		cog.style.opacity = 0;
 	}, 100);
 };
 
-document.body.addEventListener('click', function(e) {
+document.body.addEventListener("click", function(e) {
 	var lnk = e.target.getAttribute("data-link");
 
 	switch (lnk) {
-		case "utilities":
+		case "utilidades":
 			move(sho[0]);
 			break;
 
-		case "projects":
+		case "proyectos":
 			move(sho[1]);
 			break;
 
-		case "contact":
+		case "contacto":
 			move(sho[2]);
 			break;
 
-		case "object2table":
-			window.open('https://github.com/enmafo/object2table', '_blank');
+		case "tool-temporizador":
+			window.open("https://cdn.rawgit.com/enmafo/temporizador/a7758e2314ee85755e18b3dbb6bf5a7ff404d6fd/temporizador.html", "_blank");
+			break;
+
+		case "tool-temporizador-git":
+			window.open("https://github.com/enmafo/temporizador", "_blank");
+			break;
+
+		case "sys-ux-eventos":
+			window.open("https://github.com/enmafo/UX-Eventos", "_blank");
+			break;
+
+		case "sys-ux-rh":
+			window.open("https://github.com/enmafo/UX-RecursosHumanos", "_blank");
+			break;
+
+		case "sys-ux-portales":
+			window.open("https://github.com/enmafo/UX-Portales", "_blank");
 			break;
 
 		case "github":
-			window.open('https://github.com/enmafo', '_blank');
+			window.open("https://github.com/enmafo", "_blank");
 			break;
 
 		case "facebook":
-			window.open('https://facebook.com/enmafo', '_blank');
+			window.open("https://facebook.com/enmafo", "_blank");
 			break;
 
 		case "twitter":
-			window.open('https://twitter.com/enmafo', '_blank');
+			window.open("https://twitter.com/enmafo", "_blank");
 			break;
 
-		case "close":
+		case "cerrar":
 			move();
 			break;
 	};
