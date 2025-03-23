@@ -1,3 +1,5 @@
+console.log("v1.0.0");
+
 var cog = document.getElementById("cog");
 var der = document.getElementById("der");
 var sho = document.getElementsByClassName("sho");
@@ -56,16 +58,16 @@ document.body.addEventListener("click", function(e) {
 			break;
 
 		case "tool-temporizador":
-			window.open("https://cdn.rawgit.com/enmafo/temporizador/a7758e2314ee85755e18b3dbb6bf5a7ff404d6fd/temporizador.html", "_blank");
+			window.open("https://htmlpreview.github.io/?https://github.com/enmafo/temporizador/blob/master/temporizador.html", "_blank");
 			break;
 
 		case "tool-temporizador-git":
 			window.open("https://github.com/enmafo/temporizador", "_blank");
 			break;
 
-		case "sys-ux-eventos":
+/* 		case "sys-ux-eventos":
 			window.open("https://github.com/enmafo/UX-Eventos", "_blank");
-			break;
+			break; */
 
 		case "sys-ux-rh":
 			window.open("https://github.com/enmafo/UX-RecursosHumanos", "_blank");
