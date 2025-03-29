@@ -29,13 +29,27 @@
 			font-weight: bold;
 			padding-right: 8px;
 			text-align: right;
-			width: 50%;
 		}
 
 		.table-block tr td:nth-child(2) {
 			padding-left: 8px;
-			text-align: justify;
+			text-align: left;
+		}
+
+		.table-block._50-50 tr td:nth-child(1) {
 			width: 50%;
+		}
+
+		.table-block._50-50 tr td:nth-child(2) {
+			width: 50%;
+		}
+
+		.table-block._25-75 tr td:nth-child(1) {
+			width: 25%;
+		}
+
+		.table-block._25-75 tr td:nth-child(2) {
+			width: 75%;
 		}
 
 		.text-center {
@@ -48,7 +62,7 @@
 	<hr>
 
 	<div class="text-center">
-		<table class="table-block">
+		<table class="table-block _50-50">
 			<tr>
 				<td>Nombre:</td>
 				<td>Enrique Martínez Fortuno</td>
@@ -57,13 +71,13 @@
 				<td>Domicilio:</td>
 				<td>José María Pino Suárez #15, Xalapa-Enríquez, Veracruz</td>
 			</tr>
-			<tr>
+<!-- 			<tr>
 				<td>Fecha de nacimiento:</td>
 				<td>15 de septiembre de 1992</td>
-			</tr>
+			</tr> -->
 			<tr>
 				<td>Teléfono:</td>
-				<td>+52 294 1009370</td>
+				<td>(294) 1009370</td>
 			</tr>
 			<tr>
 				<td>Correo electrónico:</td>
@@ -80,7 +94,7 @@
 	<hr>
 
 	<div class="text-center">
-		<table class="table-block">
+		<table class="table-block _50-50">
 			<tr>
 				<td>Agosto 2012 - Julio 2017:</td>
 				<td>
@@ -96,7 +110,7 @@
 	<hr>
 
 	<div class="text-center">
-		<table class="table-block">
+		<table class="table-block _25-75">
 			<tr>
 				<td>Julio 2017 - presente:</td>
 				<td>
@@ -105,20 +119,28 @@
 						<li>Desarrollo de un sistema web para el registro y administración de congresos</li>
 						<li>Desarrollo de un sistema de escritorio para la administración de empleados</li>
 						<li>Diseño base y desarrollo de módulos para el portal de acceso a alumnos y docentes</li>
-						<li>Desarrollo de un módulo para validación de documentación necesaria para becas de alumnos</li>
-						<li>Desarrollo de un módulo para seguimiento y cumplimiento del programa de clases de docentes</li>
+						<li>Desarrollo de un módulo de escritorio para validar la documentación solicitada para becas</li>
+						<li>Desarrollo de un módulo de escritorio para monitorear el cumplimiento de clases virtuales de docentes</li>
+						<li>Reportes estadísticos para el personal directivo sobre alumnos y docentes en formato web, Excel y PDF</li>
+						<li>Diseño de estructura de tablas y creación de funciones y procedimientos almacenados para la base de datos</li>
+						<li>Creación de scripts para automatizar la publicación de proyectos, y para sincronizar respaldos de bases de datos y archivos con la nube</li>
+						<li>Renovación de certificados SSL para los sistemas web</li>
+						<li>Administración y mantenimiento temporal del campus virtual</li>
+						<li>Ensamble, formateo y mantenimiento de equipos de cómputo</li>
+						<li>Atención y soporte técnico a usuarios (presencialmente y por teléfono)</li>
 					</ul>
 					
 					<br>Revistas digitales:
 					<ul>
-						<li>Mantenimiento del sitio web para la revista digital "SPI Veracruz"</li>
-						<li>Mantenimiento del sitio web para las revistas digitales "Identidad Veracruz", "Identidad Puebla" e "Identidad Tlaxcala"</li>
+						<li>Mantenimiento de sitios web para las revistas digitales "SPI Veracruz", "Identidad Veracruz", "Identidad Puebla" e "Identidad Tlaxcala"</li>
+						<li>Reportes estadísticos mensuales sobre las visitas a las revistas</li>
 					</ul>
 				</td>
 			</tr>
 			<tr>
 				<td>Febrero 2020 - 2023:</td>
 				<td>
+					<br>Campus virtual:
 					<ul>
 						<li>Administración de un campus virtual a través de la plataforma Moodle y mantenimiento de un sitio web para la Red Iberoamericana de Educación y Liderazgo (RIEL)</li>
 					</ul>
@@ -127,6 +149,7 @@
 			<tr>
 				<td>Febrero 2017 - Julio 2017:</td>
 				<td>
+					<br>Campus virtual:
 					<ul>
 						<li>Administración de un campus virtual a través de la plataforma Moodle y mantenimiento de un sitio web para el Colegio de Estudios Avanzados de Iberoamérica (CEAI)</li>
 					</ul>
@@ -139,7 +162,7 @@
 	<hr>
 
 	<div class="text-center">
-		<table class="table-block">
+		<table class="table-block _50-50">
 			<tr>
 				<td>Computación en la nube:</td>
 				<td>
@@ -165,12 +188,12 @@
 				<td>Tecnologías del lado del cliente:</td>
 				<td>
 					<ul>
-						<li>Visual Basic .NET</li>
-						<li>Java</li>
 						<li>CSS3</li>
 						<li>HTML5</li>
+						<li>Java</li>
 						<li>JavaScript</li>
 						<li>TypeScript</li>
+						<li>Visual Basic .NET</li>
 					</ul>
 				</td>
 			</tr>
@@ -180,11 +203,16 @@
 					<ul>
 						<li>Apache Tomcat</li>
 						<li>Apache HTTP Server</li>
+						<li>Crystal Reports</li>
+						<li>JasperReports</li>
+						<li>Moodle</li>
 						<li>Nginx</li>
 						<li>Node.js</li>
 						<li>PHP</li>
+						<li>Proxmox</li>
 						<li>MySQL</li>
 						<li>SQL Server</li>
+						<li>WordPress</li>
 					</ul>
 				</td>
 			</tr>
@@ -199,6 +227,16 @@
 				</td>
 			</tr>
 		</table>
+	</div>
+
+	<h2 class="text-center">Habilidades</h2>
+	<hr>
+
+	<div class="">
+		<ul>
+			<li>Formateo de equipos de cómputo con sistemas Linux y Windows</li>
+			<li>Flasheo de ROMs personalizadas y rooteo de teléfonos Android</li>
+		</ul>
 	</div>
 </body>
 </html>
