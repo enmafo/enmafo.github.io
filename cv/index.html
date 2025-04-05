@@ -4,239 +4,161 @@
 	<meta charset="utf-8">
 	<meta name="robots" content="noindex">
 	<title>enmafo</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400..700&display=swap');
+
 		body {
 			background-color: #eee;
-			font-family: 'Roboto Mono';
-			font-size: 16px;
+			color: #424656;
+			font-family: "Fira Code", monospace;
+			font-size: 14px;
 			margin: 0;
-			padding: 0 32px 0 32px;
+			padding: 32px;
 		}
 
-		.flex-container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+		ul {
+			margin-top: 8px;
 		}
 
-		.table-block {
-			display: inline-block;
-		}
-
-		.table-block tr td:nth-child(1) {
+		.title {
+			color: #1856a0;
+			font-size: 30px;
 			font-weight: bold;
-			padding-right: 8px;
-			text-align: right;
 		}
 
-		.table-block tr td:nth-child(2) {
-			padding-left: 8px;
-			text-align: left;
+		.sub-title {
+			font-size: 16px;
+			font-weight: 500;
 		}
 
-		.table-block._50-50 tr td:nth-child(1) {
-			width: 50%;
+		#info-personal .sub-title {
+			font-size: 18px;
 		}
 
-		.table-block._50-50 tr td:nth-child(2) {
-			width: 50%;
+		.header {
+			color: #1856a0;
+			font-size: 18px;
+			font-weight: 500;
+			margin-top: 32px;
+			text-transform: uppercase;
 		}
 
-		.table-block._25-75 tr td:nth-child(1) {
-			width: 25%;
-		}
-
-		.table-block._25-75 tr td:nth-child(2) {
-			width: 75%;
-		}
-
-		.text-center {
-			text-align: center;
+		.date {
+			color: #000;
+			float: right;
+			font-size: 16px;
+			font-weight: bold;
 		}
 	</style>
 </head>
 <body>
-	<h2 class="text-center">Información personal</h2>
-	<hr>
-
-	<div class="text-center">
-		<table class="table-block _50-50">
-			<tr>
-				<td>Nombre:</td>
-				<td>Enrique Martínez Fortuno</td>
-			</tr>
-			<tr>
-				<td>Domicilio:</td>
-				<td>José María Pino Suárez #15, Xalapa-Enríquez, Veracruz</td>
-			</tr>
-<!-- 			<tr>
-				<td>Fecha de nacimiento:</td>
-				<td>15 de septiembre de 1992</td>
-			</tr> -->
-			<tr>
-				<td>Teléfono:</td>
-				<td>(294) 1009370</td>
-			</tr>
-			<tr>
-				<td>Correo electrónico:</td>
-				<td>enmafo@protonmail.com</td>
-			</tr>
-			<!-- <tr>
-				<td>Sitio web:</td>
-				<td>https://enmafo.github.io</td>
-			</tr> -->
-		</table>
+	<div id="info-personal">
+		<span class="title">Enrique Martínez Fortuno</span><br>
+		<span class="sub-title">Desarrollador</span><br>
+		<span>José María Pino Suárez #15, Xalapa-Enríquez, Veracruz | 294-100-9370 | enmafo@protonmail.com</span>
+		<p>
+			Desarrollador web full-stack ...
+		</p>
 	</div>
 
-	<h2 class="text-center">Experiencia educativa</h2>
-	<hr>
+	<div>
+		<div class="header">
+			Experiencia laboral
+		</div>
 
-	<div class="text-center">
-		<table class="table-block _50-50">
-			<tr>
-				<td>Agosto 2012 - Julio 2017:</td>
-				<td>
-					Ingeniería en Sistemas Computacionales <br>
-					Especialidad en Ingeniería de Software <br>
-					Instituto Tecnológico Superior de Xalapa, Xalapa-Enríquez, Veracruz
-				</td>
-			</tr>
-		</table>
+		<hr>
+
+		<div>
+			<span class="date">Agosto 2018 - Presente</span>
+			<span class="sub-title">Webmaster</span><br>
+			Revistas digitales
+			<ul>
+				<li>Mantenimiento de sitios web para las revistas digitales "SPI Veracruz", "Identidad Veracruz", "Identidad Puebla" e "Identidad Tlaxcala"</li>
+				<li>Reportes estadísticos mensuales sobre las visitas a las revistas</li>
+				<li>Respaldos periódicos de los sitios web y sus bases de datos</li>
+			</ul>
+		</div>
+	
+		<div>
+			<span class="date">Julio 2017 - Presente</span>
+			<span class="sub-title">Programador Analista</span><br>
+			Universidad de Xalapa
+			<ul>
+				<li>Desarrollo de un sistema web para el registro y administración de congresos</li>
+				<li>Desarrollo de un sistema de escritorio para la administración de empleados</li>
+				<li>Diseño base y desarrollo de módulos para el portal de acceso a alumnos y docentes</li>
+				<li>Desarrollo de un módulo de escritorio para validar la documentación solicitada para becas</li>
+				<li>Desarrollo de un módulo de escritorio para monitorear el cumplimiento de clases virtuales de docentes</li>
+				<li>Reportes estadísticos para el personal directivo sobre alumnos y docentes en formato web, Excel y PDF</li>
+				<li>Diseño de estructura de tablas y creación de funciones y procedimientos almacenados para la base de datos</li>
+				<li>Creación de scripts para automatizar la publicación de proyectos, y para sincronizar respaldos de bases de datos y archivos con la nube</li>
+				<li>Renovación de certificados SSL para los sistemas web</li>
+				<li>Administración del servidor web para las aplicaciones desarrolladas</li>
+				<li>Administración y mantenimiento temporal del campus virtual</li>
+				<li>Ensamble, formateo y mantenimiento de equipos de cómputo</li>
+				<li>Atención y soporte técnico a usuarios (presencialmente y por teléfono)</li>
+			</ul>
+		</div>
+	
+		<div>
+			<span class="date">Febrero 2020 - Febrero 2023</span>
+			<span class="sub-title">Webmaster</span><br>
+			Red Iberoamericana de Educación y Liderazgo
+			<ul>
+				<li>Administración del campus virtual</li>
+				<li>Mantenimiento del sitio web</li>
+				<li>Diseño de banners y flyers publicitarios</li>
+			</ul>
+		</div>
+	
+		<div>
+			<span class="date">Febrero 2017 - Julio 2017</span>
+			<span class="sub-title">Webmaster</span><br>
+			Colegio de Estudios Avanzados de Iberoamérica
+			<ul>
+				<li>Administración del campus virtual</li>
+				<li>Mantenimiento del sitio web</li>
+				<li>Diseño de banners y flyers publicitarios</li>
+			</ul>
+		</div>
 	</div>
 
-	<h2 class="text-center">Experiencia laboral</h2>
-	<hr>
+	<div>
+		<div class="header">
+			Educación
+		</div>
 
-	<div class="text-center">
-		<table class="table-block _25-75">
-			<tr>
-				<td>Julio 2017 - presente:</td>
-				<td>
-					Universidad de Xalapa:
-					<ul>
-						<li>Desarrollo de un sistema web para el registro y administración de congresos</li>
-						<li>Desarrollo de un sistema de escritorio para la administración de empleados</li>
-						<li>Diseño base y desarrollo de módulos para el portal de acceso a alumnos y docentes</li>
-						<li>Desarrollo de un módulo de escritorio para validar la documentación solicitada para becas</li>
-						<li>Desarrollo de un módulo de escritorio para monitorear el cumplimiento de clases virtuales de docentes</li>
-						<li>Reportes estadísticos para el personal directivo sobre alumnos y docentes en formato web, Excel y PDF</li>
-						<li>Diseño de estructura de tablas y creación de funciones y procedimientos almacenados para la base de datos</li>
-						<li>Creación de scripts para automatizar la publicación de proyectos, y para sincronizar respaldos de bases de datos y archivos con la nube</li>
-						<li>Renovación de certificados SSL para los sistemas web</li>
-						<li>Administración y mantenimiento temporal del campus virtual</li>
-						<li>Ensamble, formateo y mantenimiento de equipos de cómputo</li>
-						<li>Atención y soporte técnico a usuarios (presencialmente y por teléfono)</li>
-					</ul>
-					
-					<br>Revistas digitales:
-					<ul>
-						<li>Mantenimiento de sitios web para las revistas digitales "SPI Veracruz", "Identidad Veracruz", "Identidad Puebla" e "Identidad Tlaxcala"</li>
-						<li>Reportes estadísticos mensuales sobre las visitas a las revistas</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td>Febrero 2020 - 2023:</td>
-				<td>
-					<br>Campus virtual:
-					<ul>
-						<li>Administración de un campus virtual a través de la plataforma Moodle y mantenimiento de un sitio web para la Red Iberoamericana de Educación y Liderazgo (RIEL)</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td>Febrero 2017 - Julio 2017:</td>
-				<td>
-					<br>Campus virtual:
-					<ul>
-						<li>Administración de un campus virtual a través de la plataforma Moodle y mantenimiento de un sitio web para el Colegio de Estudios Avanzados de Iberoamérica (CEAI)</li>
-					</ul>
-				</td>
-			</tr>
-		</table>
+		<hr>
+
+		<div>
+			<span class="date">Agosto 2012 - Julio 2017</span>
+			<span class="sub-title">Instituto Tecnológico Superior de Xalapa</span>, Xalapa-Enríquez, Veracruz
+			<ul>
+				<li>Ingeniería en Sistemas Computacionales, especialidad en Ingeniería de Software</li>
+			</ul>
+		</div>
 	</div>
 
-	<h2 class="text-center">Tecnologías</h2>
-	<hr>
+	<div>
+		<div class="header">
+			Tecnologías y habilidades
+		</div>
 
-	<div class="text-center">
-		<table class="table-block _50-50">
-			<tr>
-				<td>Computación en la nube:</td>
-				<td>
-					<ul>
-						<li>Google Cloud</li>
-						<li>Amazon Web Services</li>
-						<li>Oracle Cloud</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td>Sistemas de control de versiones:</td>
-				<td>
-					<ul>
-						<li>Git</li>
-						<li>GitHub</li>
-						<li>GitLab</li>
-						<li>Bitbucket</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td>Tecnologías del lado del cliente:</td>
-				<td>
-					<ul>
-						<li>CSS3</li>
-						<li>HTML5</li>
-						<li>Java</li>
-						<li>JavaScript</li>
-						<li>TypeScript</li>
-						<li>Visual Basic .NET</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td>Tecnologías del lado del servidor:</td>
-				<td>
-					<ul>
-						<li>Apache Tomcat</li>
-						<li>Apache HTTP Server</li>
-						<li>Crystal Reports</li>
-						<li>JasperReports</li>
-						<li>Moodle</li>
-						<li>Nginx</li>
-						<li>Node.js</li>
-						<li>PHP</li>
-						<li>Proxmox</li>
-						<li>MySQL</li>
-						<li>SQL Server</li>
-						<li>WordPress</li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td>Frameworks de desarrollo:</td>
-				<td>
-					<ul>
-						<li>Angular</li>
-						<li>Bootstrap</li>
-						<li>Spring</li>
-					</ul>
-				</td>
-			</tr>
-		</table>
-	</div>
+		<hr>
 
-	<h2 class="text-center">Habilidades</h2>
-	<hr>
-
-	<div class="">
-		<ul>
-			<li>Formateo de equipos de cómputo con sistemas Linux y Windows</li>
-			<li>Flasheo de ROMs personalizadas y rooteo de teléfonos Android</li>
-		</ul>
+		<div>
+			<b>Computación en la nube</b>: Amazon Web Services, Google Cloud, Oracle Cloud<br>
+			<b>Edición de video</b>: Audacity, DaVinci Resolve, FFmpeg, Magick, Photoshop<br>
+			<b>Frameworks de desarrollo</b>: Angular, Bootstrap, Spring<br>
+			<b>Sistemas de control de versiones</b>: Git, GitHub, GitLab, Bitbucket<br>
+			<b>Tecnologías del lado del cliente</b>: CSS, HTML, Java, JavaScript, TypeScript, Visual Basic .NET<br>
+			<b>Tecnologías del lado del servidor</b>: Apache Tomcat, Apache HTTP Server, Crystal Reports, JasperReports, Moodle, Nginx, Node.js, PHP, Proxmox, MySQL, SQL Server, WordPress<br>
+			<b>Habilidade varias:</b>
+			<ul>
+				<li>Formateo de equipos de cómputo con sistemas Linux y Windows</li>
+				<li>Flasheo de ROMs personalizadas y rooteo de teléfonos Android</li>
+			</ul>
+		</div>
 	</div>
 </body>
 </html>
